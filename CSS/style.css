@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial,  Tahoma; }
+
+body {
+  background-color: #b7b4b4; }
+
+.container {
+  width: 470px;
+  margin: 50px auto; }
+
+.content {
+  width: 470px;
+  height: 275px;
+  clear: both; }
+
+.tabs {
+  width: inherit;
+  height: auto; }
+
+.tabs__tab {
+  float: left;
+  background-color: #0e7db1;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  text-shadow: 0 -1px 1px #333;
+  padding: 9px 20px;
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer; }
+  .tabs__tab--active {
+    background-color: #fff;
+    color: #000;
+    text-shadow: 0 0; }
+
+.screen {
+  display: none; }
+
+.active {
+  display: inline-block;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 0 5px 5px 5px;
+  height: inherit; }
+
+.profile__left {
+  display: inline-block;
+  width: calc(35% - 20px); }
+
+.profile__picture {
+  overflow: hidden;
+  border-radius: 5px;
+  height: 170px; }
+  .profile__picture img {
+    width: 100%; }
+
+.profile__button {
+  cursor: pointer;
+  display: block;
+  margin-top: 7px;
+  height: 30px;
+  width: 100%;
+  background-color: #e68000;
+  background: linear-gradient(#e68000 0%, #e65300 100%);
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #fff;
+  text-shadow: 1px -1px 0 #000; }
+
+.profile__right {
+  width: calc(68% - 20px);
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 15px; }
+
+.profile__interest {
+  font-size: 12px;
+  font-weight: bold; }
+
+.profile__jslist {
+  padding-left: 0px;
+  margin-top: 5px;
+  max-height: 65px; }
+
+.profile__jsli {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid;
+  border-color: #c0c0c0;
+  margin: 3px 2px;
+  padding: 4px 6px;
+  color: #0e7db1;
+  font-size: 13px;
+  border-radius: 2px; }
+
+.profile__value {
+  margin: 0;
+  font-size: 23px;
+  font-weight: normal; }
+
+#profile__input {
+  font-size: inherit; }
+
+#phone {
+  font-size: 11px; }
+
+#mail {
+  font-size: 11px; }
+
+.profile__city {
+  font-size: 11px;
+  color: #878181;
+  margin-top: 2px; }
+
+.profile__info {
+  margin-top: 15px; }
+  .profile__info tr {
+    height: 22px; }
+    .profile__info tr td:first-child {
+      font-size: 12px;
+      width: 155px;
+      font-weight: bold; }
+    .profile__info tr td:last-child {
+      font-size: 12px;
+      width: 107px; }
+
+.profile__mail {
+  color: #0e7db1; }
+
+.profile__mail--color {
+  color: #0e7db1; }
+
+.hidden {
+  display: none; }
+
+.friends {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  max-height: 275px; }
+
+.friend {
+  width: calc(50% - 20px);
+  height: calc(35% - 20px);
+  display: inline-block;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden; }
+  .friend__avatar {
+    border-radius: 3px;
+    overflow: hidden;
+    width: 32%;
+    height: 100%;
+    float: left; }
+    .friend__avatar img {
+      width: 100%;
+      height: 100%; }
+  .friend__info {
+    vertical-align: top;
+    cursor: pointer;
+    display: block;
+    margin-left: 75px; }
+  .friend__name {
+    font-weight: bold;
+    font-size: 12px; }
+    .friend__name a {
+      color: #0e7db1; }
+  .friend__city {
+    font-size: 10px;
+    color: #555;
+    margin-top: 3px; }
+  .friend__status {
+    position: absolute;
+    bottom: 5px;
+    font-size: 10px;
+    color: #62bf45;
+    font-style: italic; }
+
+.options {
+  width: 100%;
+  height: 100%; }
+
+.options__button {
+  cursor: pointer;
+  display: block;
+  margin-top: 7px;
+  height: 30px;
+  width: 30%;
+  background-color: #2a61ba;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #fff;
+  text-shadow: 1px -1px 0 #000; }
+
+.options__label {
+  font-size: 12px;
+  text-shadow: 1px 1px #fff; }
+
+.child-interest {
+  font-weight: normal; }
+
+.child-interest-active {
+  color: #000; }
+
+#interest-value {
+  border: 1px solid #45cee0;
+  border-radius: 5px;
+  box-shadow: 1px 1px #45cee0;
+  background-color: #dbfaff; }
+
+label#interest-value-error {
+  display: inline-block;
+  font-size: 10px;
+  color: #990e09;
+  border: 0px;
+  margin-left: 5px; }
+
+.error {
+  border: 1px solid #990e09; }

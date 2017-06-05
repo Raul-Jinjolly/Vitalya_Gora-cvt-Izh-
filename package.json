@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/Raul-Jinjolly/Vitalya_Gora-cvt-Izh-/issues"
   },
-  "homepage": "https://github.com/Raul-Jinjolly/Vitalya_Gora-cvt-Izh-#readme"
+  "homepage": "https://github.com/Raul-Jinjolly/Vitalya_Gora-cvt-Izh-#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0"
+  }
 }

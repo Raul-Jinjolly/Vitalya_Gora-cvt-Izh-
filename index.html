@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />-->
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+<!--********* Tabs *********-->
+
+      <div class="tabs">
+        <span class="tabs__tab  tabs__tab--active" data-target="profile">Профиль</span>
+        <span class="tabs__tab" data-target="friends">Друзья пользователя</span>
+        <span class="tabs__tab" data-target="options">Настройки</span>
+      </div>
+
+<!--********* Content *********-->
+
+  <div class="content">
+
+
+<!--********* Profile (First Tab) *********-->
+
+      <div class="profile screen active" data-content="profile">
+        <div class="profile__left">
+          <div class="profile__picture">
+            <img src="http://img-fotki.yandex.ru/get/5634/13156377.5/0_9d8e0_815f7946_XL.jpeg" alt="">
+          </div>
+          <button class="profile__button">Добавить в друзья</button>
+        </div>
+        <div class="profile__right">
+          <div class="profile__name">
+          <h1 class="profile__value">Виталя Гора</h1>
+          <input type="text" name="input" id="profile__input" value="" class="hidden">
+          </div>
+          <div class="profile__city">г. Нижние Шахты</div>
+          <div class="profile__info">
+          <table>
+            <tr>
+              <td>Семейное положение</td>
+              <td>холост</td>
+            </tr>
+            <tr>
+              <td>Телефон</td>
+              <td class="hidden"><input type="text" name="phone" id="phone" value="" class="hidden" size="15"></td>
+              <td class="profile__phone">+7 (440)554-32-12</td>
+            </tr>
+            <tr>
+              <td>E-mail</td>
+              <td class="hidden"><input type="text" name="mail" id="mail" value="" class="hidden" size="15"></td>
+              <td class="profile__mail"><a class="profile__mail--color" href="#">vitalya@gora.ru</a></td>
+            </tr>
+          </table>
+          </div>
+          <br><br>
+          <div class="profile__interest">
+            Интересы <br>
+            <ul class="profile__jslist profile__jslist--scroll"></ul>
+          </div>
+        </div>
+      </div>
+
+<!--********* Friends (Second Tab) *********-->
+
+      <div class="friends screen scroll" data-content="friends">
+        <div class="friend">
+          <div class="friend__avatar">
+            <img src="http://www.floranimal.ru/pages/animal/l/137.jpg">
+          </div>
+          <div class="friend__info">
+          <div class="friend__name"><a href="#">Лев Бронштейн</a></div>
+          <div class="friend__city">г. Ханты-Мансийск</div>
+          <div class="friend__status">Online</div>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar">
+            <img src="http://keep4u.ru/imgs/b/080513/08/0846f38a961a8cdf6a.jpg">
+          </div>
+          <div class="friend__info">
+          <div class="friend__name"><a href="#">Находка Капитал</a></div>
+          <div class="friend__city">г. Усть-Бельск</div>
+          <div class="friend__status"></div>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar">
+            <img src="http://img0.liveinternet.ru/images/attach/c/6/93/271/93271712_tigr.jpg">
+          </div>
+          <div class="friend__info">
+          <div class="friend__name"><a href="#">Яндекс Петренко</a></div>
+          <div class="friend__city">г. Пермь</div>
+          <div class="friend__status"></div>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar">
+            <img src="https://akphoto1.ask.fm/595/331/552/-229997000-1sq495s-3ogm21m0eqn7o0p/original/avatar.jpg">
+          </div>
+          <div class="friend__info">
+          <div class="friend__name"><a href="#">Успех Возможностей</a></div>
+          <div class="friend__city">г. Радонеж</div>
+          <div class="friend__status">Online</div>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar">
+            <img src="http://britanskie-kotiki.ru/images/stories/kak-ponyat-svou-koshku/kotenok-i-shenok.jpg">
+          </div>
+          <div class="friend__info">
+          <div class="friend__name"><a href="#">Инна Нашлась</a></div>
+          <div class="friend__city">г. Омск</div>
+          <div class="friend__status">Online</div>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar">
+            <img src="http://2.bp.blogspot.com/-6LNikYdL5OU/UNfpHFejqxI/AAAAAAAACtw/OQgTqLQH4ho/s1600/funny-cats-12-22.jpg">
+          </div>
+          <div class="friend__info">
+          <div class="friend__name"><a href="#">Алла Подольская</a></div>
+          <div class="friend__city">г. Петропавловск-Камчатский</div>
+          <div class="friend__status">Online</div>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar">
+            <img src="http://cdn.fishki.net/upload/post/201508/23/1638278/14335034541376.jpg">
+          </div>
+          <div class="friend__info">
+          <div class="friend__name"><a href="#">Джанго Освобожденный</a></div>
+          <div class="friend__city">г. Калуга</div>
+          <div class="friend__status">Online</div>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar">
+            <img src="http://animalworld.com.ua/images/2015/September/Foto/Fun/6/Fun-anim-1.jpg">
+          </div>
+          <div class="friend__info">
+          <div class="friend__name"><a href="#">Ламбада Корнеевская</a></div>
+          <div class="friend__city">г. Каракас</div>
+          <div class="friend__status"></div>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar">
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/c0/08/df/c008dfaa7c95292d374402d6cc784a46.jpg">
+          </div>
+          <div class="friend__info">
+          <div class="friend__name"><a href="#">Виктор Откуда</a></div>
+          <div class="friend__city">г. Караганда</div>
+          <div class="friend__status"></div>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar">
+            <img src="http://img.funtema.ru/10042014/hegde/9.jpg">
+          </div>
+          <div class="friend__info">
+          <div class="friend__name"><a href="#">Шарик Кошмарик</a></div>
+          <div class="friend__city">г. Владимир</div>
+          <div class="friend__status">Online</div>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar">
+            <img src="http://hronika.info/uploads/posts/2016-04/1461513846_ul12.jpg">
+          </div>
+          <div class="friend__info">
+          <div class="friend__name"><a href="#">Яша Счастливый</a></div>
+          <div class="friend__city">г. Междуреченск</div>
+          <div class="friend__status">Online</div>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar">
+            <img src="http://www.radionetplus.ru/uploads/posts/2012-06/1339516994_0_21b5f_beae30b0_orig.jpg">
+          </div>
+          <div class="friend__info">
+          <div class="friend__name"><a href="#">Крошка Гармошка</a></div>
+          <div class="friend__city">г. Суздаль</div>
+          <div class="friend__status"></div>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar">
+            <img src="http://www.chusrayon.ru/sites/default/files/files/2016/2016.08_news/medved2_main.jpg">
+          </div>
+          <div class="friend__info">
+          <div class="friend__name"><a href="#">Тарас Михайлов</a></div>
+          <div class="friend__city">г. Магнитогорск</div>
+          <div class="friend__status">Online</div>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar">
+            <img src="http://www.bugaga.ru/uploads/posts/2015-05/1430825687_udivlennye-zhivotnye-15.jpg">
+          </div>
+          <div class="friend__info">
+          <div class="friend__name"><a href="#">Миклуха Маклаев</a></div>
+          <div class="friend__city">г. Махачкала</div>
+          <div class="friend__status">Online</div>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar">
+            <img src="http://ndl.mgccw.com/mu3/app/20140219/06/1392770236077/sss/4_small.png">
+          </div>
+          <div class="friend__info">
+          <div class="friend__name"><a href="#">Тает Лёдов</a></div>
+          <div class="friend__city">г. Киев</div>
+          <div class="friend__status">Online</div>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar">
+            <img src="http://fotointeres.ru/wp-content/uploads/2016/09/0003a709_medium-720x479.jpg">
+          </div>
+          <div class="friend__info">
+          <div class="friend__name"><a href="#">Превед Медведов</a></div>
+          <div class="friend__city">г. Куала-Лумпур</div>
+          <div class="friend__status"></div>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar">
+            <img src="http://ogivotnich.ru/images/stories/zhivotnye/animal.jpg">
+          </div>
+          <div class="friend__info">
+          <div class="friend__name"><a href="#">Алик Улыбкин</a></div>
+          <div class="friend__city">г. Йоханесбург</div>
+          <div class="friend__status">Online</div>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar">
+            <img src="https://pp.userapi.com/c616729/v616729310/69c3/KmAy6S5yKCk.jpg">
+          </div>
+          <div class="friend__info">
+          <div class="friend__name"><a href="#">Карл Подозрительный</a></div>
+          <div class="friend__city">г. Стокгольм</div>
+          <div class="friend__status">Online</div>
+          </div>
+        </div>
+      </div>
+
+<!--********* Option form (Third tab) *********-->
+      <div class="options screen" data-content="options">
+        <form class="options__js-form">
+              <label class="options__label" for="js-form">Добавьте интересы </label><br>
+              <input id="interest-value" value="" type="text" name="area"
+                 placeholder="*сюда =)"><br>
+              <button type="submit" class="options__button">Добавить</button>
+            </form>
+      </div>
+  </div>
+</div>
+
+<!--********* Scripts *********-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.0/jquery.nicescroll.js"></script>
+  <script src="form.js"></script>
+  <script src="tabs.js"></script>
+  <script src="dataSubstitutions.js"></script>
+  <script src="scroll.js"></script>
+
+</body>
+</html>
